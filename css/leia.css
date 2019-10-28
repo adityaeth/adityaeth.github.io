@@ -1,0 +1,444 @@
+html {
+    position: absolute;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    position: absolute;
+    width: 100%;
+}
+
+span, p, i, a, label {
+    display: inline-block;
+}
+
+h1 div, h2 div, h3 div, h4 div, h5 div, h6 div {
+    font-weight: 500;
+}
+
+#leiaAdLogo {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 6%;
+    border-radius: 50%;
+    box-shadow: black 0px 0px 3px -1px;
+    cursor: pointer;
+    z-index: 10000000;
+}
+
+#mainMenu .floatingToolbox {
+    height: 50px;
+}
+
+#mainMenu {
+    position: absolute;
+    width: 100%;
+}
+
+##closeNewsletterButton {
+    z-index: 100;
+}
+
+#menuBorder {
+    overflow: -moz-scrollbars-none;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+#menuBorder::-webkit-scrollbar {
+    width: 0 !important;
+}
+
+#trigger-overlay {
+    position: fixed;
+    z-index: 100;
+    padding: 0;
+}
+
+#trigger-overlay i {
+    text-shadow: #8a8a8a 0px 0px 3px;
+}
+
+.overlay {
+    position: fixed;
+    height: 100%;
+    top: 0;
+    z-index: 9999;
+}
+
+.overlay nav {
+    position: relative;
+    top: 50%;
+    height: 60%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.overlay ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.overlay ul li {
+    display: block;
+    /*height: 20%;
+    height: calc(100% /7);*/
+    min-height: 54px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    width: 100%;
+}
+
+.overlay ul li a {
+    display: block;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+    letter-spacing: 2px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+    text-decoration: none;
+}
+
+.overlay-open::after {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+
+.overlay-contentpush {
+    visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-transition: -webkit-transform 0.5s, visibility 0s 0.5s;
+    transition: transform 0.5s, visibility 0s 0.5s;
+}
+
+.overlay-contentpush.open {
+    visibility: visible;
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+}
+
+.overlay .overlay-close {
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    overflow: hidden;
+    border: none;
+    outline: none;
+}
+
+#headerBackgroundVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+#headerOverlay {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: 0;
+}
+
+header {
+    width: 100%;
+    position: relative;
+    min-height: 900px;
+    /*display: table;*/
+    display: block;
+    table-layout: fixed;
+}
+
+section {
+    width: 100%;
+    position: relative;
+    height: auto;
+    background: white;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.navbar-brand {
+    height: auto;
+}
+
+#headerContainer, .sectionContainer {
+    display: table;
+    width: 100%;
+    /*height: 100%;*/
+    table-layout: fixed;
+}
+
+#headerContainer {
+    height: 100%;
+}
+
+#headerContent, .sectionContent {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: table-cell;
+    vertical-align: middle;
+    padding-top: 80px;
+}
+
+#outerHeader {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.sectionContent {
+    padding-bottom: 80px;
+    position: relative;
+    overflow: visible !important;
+}
+
+.sectionOverlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.headerImage {
+    width: 100%;
+}
+
+a[contenteditable=\"true\"] {
+    text-decoration: none;
+}
+
+.navbar-nav>li>a {
+    line-height: normal !important;
+}
+
+.outerGrid {
+    display: inline-grid;
+    position: relative;
+}
+
+.innerGridTable {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.innerTableContent {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#fancybox-close {
+    right: -30px !important;
+    z-index: 10001 !important;
+}
+
+#fancybox-wrap {
+    position: fixed !important;
+    z-index: 10000 !important;
+}
+
+.carousel-inner {
+    z-index: 0;
+}
+
+#quote-carousel .carousel-control {
+    z-index: 101;
+}
+
+.customLink {
+   text-decoration: none;
+   cursor: pointer;
+}
+
+.customLink, .customLink a {
+    width: 100%;
+}
+
+.customImage, .customEmbed iframe {
+    max-width: 100%;
+}
+
+.customButton {
+    color: rgb(50,50,50);
+    border: 2px solid rgb(50,50,50);
+    background: transparent;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+header .customButton,
+#about .aboutImageBg .customButton,
+#features .featuresImageBg .customButton,
+#gallery .galleryImageBg .customButton,
+#testimonial .testimonialImageBg .customButton,
+#team .teamImageBg .customButton,
+#blog .blogImageBg .customButton,
+#contact .contactImageBg .customButton,
+.customImageBg .customButton{
+    color: white;
+    border-color: white;
+}
+
+header .customImage,
+#about .aboutImageBg .customImage,
+#features .featuresImageBg .customImage,
+#gallery .galleryImageBg .customImage,
+#testimonial .testimonialImageBg .customImage,
+#team .teamImageBg .customImage,
+#blog .blogImageBg .customImage,
+#contact .contactImageBg .customImage,
+.customImageBg .customImage {
+    border: 1px solid white;
+}
+
+.customButton:hover {
+    color: white;
+    border-color: rgb(50,50,50);
+    background: rgb(50,50,50);
+}
+
+#fancybox-left, #fancybox-right {
+    bottom: 45% !important;
+    height: 10% !important;
+    width: fit-content !important;
+}
+
+#fancybox-right-ico {
+    right: 5px !important;
+    left: auto !important;
+}
+
+#fancybox-left-ico {
+    left: 5px !important;
+    right: auto !important;
+}
+
+#fancybox-title-over {
+    min-height: 10px;
+}
+
+#footer {
+    width: 100%;
+    position: absolute;
+}
+
+#footerFour {
+    width: 100%;
+    text-align: center;
+    background: rgb(50,50,50);
+    color: white;
+    padding: 40px;
+    margin: 0;
+    margin-bottom: 0;
+}
+
+#leiaAdLogoA {
+    position: fixed;
+}
+
+#newsletterOuter {
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+}
+
+#newsletterOuter .floatingToolbox {
+    position: fixed;
+    top: 10px;
+    height: 50px;
+}
+
+@media only screen and (min-width : 800px) {
+    #headerBackgroundVideo {
+        min-width: 100%;
+        min-height: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width : 800px) {
+    #leiaAdLogo {
+        width: 20%;
+    }
+
+    #headerContent {
+        max-width: 90%;
+    }
+
+    .sectionContainer, header, .sectionContent {
+        background-attachment: scroll !important;
+    }
+
+    .customEmbed iframe {
+       width: fit-content;
+    }
+
+    #close-menu {
+        position: initial !important;
+        width: 100%;
+        left: 0 !important;
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 50px !important;
+    }
+}
+
+@media only screen and (max-height : 400px) {
+    header {
+        min-height: 400px;
+    }
+}
+
+@media only screen and (max-height : 500px) {
+    header {
+        min-height: 500px;
+    }
+}
+
+@media only screen and (max-height : 600px) {
+    header {
+        min-height: 600px;
+    }
+}
+
+@media only screen and (max-height : 700px) {
+    header {
+        min-height: 700px;
+    }
+}
+
+@media only screen and (max-height : 800px) {
+    header {
+        min-height: 800px;
+    }
+}
